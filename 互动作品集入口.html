@@ -92,6 +92,18 @@
         inset 0 0 0 1px rgba(255,255,255,0.04),
         0 0 32px rgba(126, 247, 255, 0.08);
       text-align: left;
+      transform: perspective(1200px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+      transition: transform 0.18s ease-out, box-shadow 0.3s ease;
+      will-change: transform;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 50%), rgba(126, 247, 255, 0.16), transparent 34%);
+      opacity: 0.8;
     }
 
     .brand {
@@ -196,6 +208,41 @@
       background: linear-gradient(90deg, rgba(126, 247, 255, 0.7), rgba(255,255,255,0.08));
     }
 
+    .signal-readout {
+      position: fixed;
+      right: 24px;
+      bottom: 20px;
+      z-index: 2;
+      color: rgba(238,242,244,0.58);
+      font: 10px 'DM Mono', monospace;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .about-dialog {
+      width: min(480px, calc(100% - 36px));
+      padding: 30px;
+      border: 1px solid rgba(126, 247, 255, 0.35);
+      color: var(--text);
+      background: rgba(9, 13, 18, 0.94);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 30px rgba(126, 247, 255, 0.12);
+    }
+
+    .about-dialog::backdrop {
+      background: rgba(4, 7, 10, 0.72);
+      backdrop-filter: blur(8px);
+    }
+
+    .about-dialog h2 { margin: 0 0 14px; font-size: 28px; letter-spacing: -.05em; }
+    .about-dialog p { margin: 0 0 22px; color: var(--muted); line-height: 1.8; font-size: 13px; }
+    .dialog-close { color: var(--text); background: transparent; border: 1px solid var(--line); cursor: pointer; padding: 10px 14px; }
+    .dialog-close:hover { border-color: var(--hot); color: var(--hot); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card { transform: none; transition: none; }
+      .button { transition: none; }
+    }
+
     @media (max-width: 640px) {
       .card {
         padding: 36px 24px 28px;
@@ -224,10 +271,19 @@
 
     <div class="actions">
       <a class="button" href="交流聚集地.html">进入作品展示</a>
-      <a class="button ghost" href="#">关于项目</a>
+      <button class="button ghost" type="button" data-about-trigger>关于项目</button>
     </div>
 
     <div class="meta">2026 / creative interface</div>
   </main>
+
+  <div class="signal-readout" aria-live="polite">SIGNAL / READY</div>
+  <dialog class="about-dialog" data-about-dialog>
+    <h2>关于这个入口</h2>
+    <p>这是一个把故事、视觉与互动放在同一条信号链上的作品集入口。移动指针，观察界面如何回应；准备好后进入作品展示。</p>
+    <button class="dialog-close" type="button" data-about-close>返回入口</button>
+  </dialog>
+
+  <script src="js/entry.js"></script>
 </body>
 </html>
