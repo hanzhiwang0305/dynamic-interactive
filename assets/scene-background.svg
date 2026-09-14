@@ -1,0 +1,79 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="480" y1="0" x2="480" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7C49B"/>
+      <stop offset="0.35" stop-color="#BE7E73"/>
+      <stop offset="0.72" stop-color="#463847"/>
+      <stop offset="1" stop-color="#17161A"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="480" y1="420" x2="480" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F1C22"/>
+      <stop offset="1" stop-color="#09090B"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" fill="url(#sky)"/>
+  <g opacity="0.7" stroke="#4F3D42" stroke-width="2" fill="none">
+    <path d="M0 250C120 180 148 160 227 220C305 278 320 196 390 213C456 230 490 122 570 160C650 197 684 172 760 220C838 268 885 227 960 196V0H0V250Z"/>
+    <path d="M0 350C100 286 126 240 205 270C283 300 308 280 390 260C465 241 520 162 595 210C665 255 693 236 774 270C840 299 906 286 960 262V0H0V350Z"/>
+  </g>
+  <g opacity="0.5" fill="#F4D4B3">
+    <circle cx="117" cy="120" r="66"/>
+    <circle cx="181" cy="102" r="62"/>
+    <circle cx="730" cy="101" r="80"/>
+    <circle cx="820" cy="124" r="71"/>
+    <circle cx="888" cy="107" r="52"/>
+  </g>
+  <g opacity="0.7">
+    <rect x="160" y="145" width="640" height="152" rx="6" fill="#48424A"/>
+    <rect x="208" y="170" width="544" height="102" rx="4" fill="#E4574E"/>
+    <text x="480" y="230" text-anchor="middle" fill="#F5EDE3" font-size="42" font-family="Microsoft YaHei, sans-serif" font-weight="700">保护大气环境人人有责</text>
+  </g>
+  <g opacity="0.8">
+    <rect x="0" y="420" width="960" height="300" fill="url(#ground)"/>
+  </g>
+  <g opacity="0.88">
+    <path d="M20 520C68 492 117 500 147 472L247 440L316 510L214 566L53 566L20 520Z" fill="#A9B2B3"/>
+    <path d="M178 470H322L342 530H164L178 470Z" fill="#3D2A38"/>
+    <path d="M220 470H326L355 520H202L220 470Z" fill="#171C1D"/>
+    <path d="M182 502H320" stroke="#F25456" stroke-width="10" stroke-linecap="round"/>
+    <path d="M80 525L110 510H228L260 525H80Z" fill="#A1C5D1"/>
+    <g fill="#E85A52">
+      <circle cx="122" cy="562" r="25"/>
+      <circle cx="279" cy="562" r="25"/>
+    </g>
+    <g stroke="#201B1D" stroke-width="6">
+      <path d="M110 500L86 568"/>
+      <path d="M288 500L314 568"/>
+    </g>
+  </g>
+  <g opacity="0.9">
+    <path d="M520 470L710 470L760 530L536 540L520 470Z" fill="#1E2025"/>
+    <path d="M560 430L690 430L720 470L532 470L560 430Z" fill="#2A2D31"/>
+    <path d="M690 470L760 530L770 540L724 540L680 470H690Z" fill="#17181B"/>
+    <path d="M548 436H604" stroke="#F5A63E" stroke-width="14" stroke-linecap="round"/>
+    <path d="M610 432H673" stroke="#FF6057" stroke-width="14" stroke-linecap="round"/>
+    <path d="M668 430H703" stroke="#F5A63E" stroke-width="14" stroke-linecap="round"/>
+    <g fill="#F25E52">
+      <circle cx="561" cy="584" r="28"/>
+      <circle cx="704" cy="584" r="28"/>
+    </g>
+    <g stroke="#14171A" stroke-width="6">
+      <path d="M547 532L530 500"/>
+      <path d="M716 532L726 500"/>
+    </g>
+  </g>
+  <g opacity="0.9">
+    <path d="M585 360L715 360L760 498L535 493L585 360Z" fill="#E3C7B7"/>
+    <path d="M545 495L760 498L764 532H528L545 495Z" fill="#0D0D0F"/>
+    <path d="M615 380L694 380L710 440L603 444L615 380Z" fill="#2F3340"/>
+    <path d="M588 425L693 425" stroke="#A5A9B3" stroke-width="8"/>
+    <path d="M598 445L693 445" stroke="#A5A9B3" stroke-width="8"/>
+    <circle cx="616" cy="547" r="32" fill="#F25D4D"/>
+    <circle cx="708" cy="547" r="32" fill="#F25D4D"/>
+  </g>
+  <g opacity="0.85" fill="#F1E1C8">
+    <circle cx="188" cy="181" r="8"/>
+    <circle cx="680" cy="164" r="7"/>
+    <circle cx="758" cy="182" r="8"/>
+  </g>
+</svg>

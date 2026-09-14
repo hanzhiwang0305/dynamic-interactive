@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一个关于互动、光线与数字叙事的创意作品集。">
+  <title>交互聚集地 / Interactive Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-theme="day">
+  <header class="shell topbar">
+    <a class="brand" href="#top" aria-label="交互聚集地"><i class="brand-mark"></i><span>交互聚集地</span></a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#work">作品</a>
+      <a href="#about">关于</a>
+      <a href="mailto:hello@flow.archive">联系</a>
+      <button class="theme-toggle" aria-label="切换明暗主题" title="切换主题">☼</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="shell hero" id="about">
+      <div class="hero-copy">
+        <div class="eyebrow">Interactive portfolio / 2026</div>
+        <h1>让想法<br>开始<em>流动。</em></h1>
+        <p class="hero-description">我是王翰芝，一名专注于数字体验的设计师与创作者。把复杂的故事，变成值得被触摸的瞬间。</p>
+        <div class="hero-actions">
+          <a class="button" href="#work">浏览作品 <span class="arrow">↘</span></a>
+          <a class="button secondary" href="mailto:hello@flow.archive">聊聊合作</a>
+        </div>
+      </div>
+
+      <div class="orbit-stage" aria-label="可拖动的创作领域节点">
+        <div class="core"><div><strong>MAKE<br>IT MOVE</strong><small>拖动周围的词</small></div></div>
+        <div class="orbit-node node-a" data-label="品牌策略"><div><b>01</b><span>品牌<br>策略</span></div></div>
+        <div class="orbit-node node-b" data-label="互动设计"><div><b>02</b><span>互动<br>设计</span></div></div>
+        <div class="orbit-node node-c" data-label="数字叙事"><div><b>03</b><span>数字<br>叙事</span></div></div>
+        <div class="orbit-node node-d" data-label="创意开发"><div><b>04</b><span>创意<br>开发</span></div></div>
+        <div class="orbit-label">A SMALL UNIVERSE OF CURIOSITY</div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>SELECTED WORK <b>✳</b></span>
+        <span>SELECTED WORK <b>✳</b></span>
+        <span>SELECTED WORK <b>✳</b></span>
+        <span>SELECTED WORK <b>✳</b></span>
+        <span>SELECTED WORK <b>✳</b></span>
+        <span>SELECTED WORK <b>✳</b></span>
+      </div>
+    </div>
+
+    <section class="shell work-section" id="work">
+      <div class="section-heading">
+        <h2>一些<br><em>动静。</em></h2>
+        <p>精选项目，记录我如何在策略、视觉与技术之间搭桥。</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="作品分类">
+        <button class="filter active" data-filter="all">全部 / 06</button>
+        <button class="filter" data-filter="identity">品牌身份</button>
+        <button class="filter" data-filter="digital">数字体验</button>
+        <button class="filter" data-filter="culture">文化项目</button>
+      </div>
+
+      <div class="projects" id="projects-container"></div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <span>© 2026 FLOW ARCHIVE</span>
+    <span>SHENZHEN / CHINA · MADE WITH CURIOSITY</span>
+  </footer>
+
+  <div class="modal-backdrop" role="dialog" aria-modal="true" aria-label="项目详情">
+    <div class="modal">
+      <div class="modal-top">
+        <span id="modalType">PROJECT / 01</span>
+        <button class="close" aria-label="关闭详情">×</button>
+      </div>
+      <h3 id="modalTitle">海岸线之后</h3>
+      <p id="modalDescription">这是一个关于空间、感官与记忆的实验项目。我们从一个简单的问题出发：如果一个品牌不急着说服你，而是邀请你停留，会发生什么？</p>
+      <a class="button" href="mailto:hello@flow.archive">询问项目详情 <span class="arrow">↗</span></a>
+    </div>
+  </div>
+
+  <script src="data/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
