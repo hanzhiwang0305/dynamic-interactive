@@ -91,7 +91,7 @@ const renderProjects = () => {
   if (!projectContainer || !window.projectData) return;
 
   projectContainer.innerHTML = window.projectData.map((project) => `
-    <article class="project" tabindex="0" role="button" aria-label="查看项目：${escapeHtml(project.title)}" data-category="${escapeHtml(project.category)}" data-title="${escapeHtml(project.title)}" data-type="${escapeHtml(project.type)}">
+    <article class="project" tabindex="0" role="link" aria-label="进入项目：${escapeHtml(project.title)}" data-category="${escapeHtml(project.category)}" data-title="${escapeHtml(project.title)}" data-type="${escapeHtml(project.type)}" data-index="${escapeHtml(project.index)}">
       <div class="project-visual"></div>
       <span class="project-index">${escapeHtml(project.index)} / 06</span>
       <span class="project-tag">${escapeHtml(project.tag)}</span>
@@ -147,6 +147,7 @@ const renderProjects = () => {
   const modalTitle = document.querySelector('#modalTitle');
   const modalType = document.querySelector('#modalType');
   const modalDescription = document.querySelector('#modalDescription');
+  const modalLink = document.querySelector('#modalLink');
 
   const closeButton = document.querySelector('.close');
   const closeModal = () => {
@@ -157,11 +158,8 @@ const renderProjects = () => {
   projects.forEach((project) => {
     const openProject = () => {
       const data = window.projectData.find((item) => item.title === project.dataset.title);
-      if (!data || !modalBackdrop) return;
-      modalTitle.textContent = data.title;
-      modalType.textContent = `PROJECT / ${data.index} · ${data.type}`;
-      modalDescription.textContent = data.description;
-      modalBackdrop.classList.add('open');
+      if (!data) return;
+      window.location.href = `项目详情.html?project=${encodeURIComponent(data.index)}`;
     };
 
     project.addEventListener('click', openProject);
