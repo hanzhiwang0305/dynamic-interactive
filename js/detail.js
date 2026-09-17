@@ -7,7 +7,7 @@ const setText = (selector, value) => {
 };
 
 if (project) {
-  document.title = `${project.title} / 王翰芝`;
+  document.title = `${project.title} / Wang Hanzhi`;
   setText('#detailKicker', `PROJECT / ${project.index} · ${project.type}`);
   setText('#detailTitle', project.title);
   setText('#detailDescription', project.description);

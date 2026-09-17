@@ -31,8 +31,8 @@ window.projectData = [
   },
   {
     category: 'culture',
-    title: '数字叙事',
-    type: '数字叙事',
+    title: '沉浸体验',
+    type: '沉浸体验',
     index: '03',
     tag: 'Narrative',
     subtitle: '给植物博物馆的互动展览',
@@ -41,7 +41,7 @@ window.projectData = [
     year: '2024',
     role: '内容架构 · 数字展陈 · 互动叙事',
     insight: '一株植物的时间尺度，足以改变人观看世界的速度。',
-    process: '从植物档案、园艺笔记和观众记忆中收集素材，以“种子、根系、季节、照料”组织四章数字叙事。',
+    process: '从植物档案、园艺笔记和观众记忆中收集素材，以“种子、根系、季节、照料”组织四章沉浸体验。',
     outcome: '将不可见的生长过程转化为可探索的声音、文字与影像路径，成为展览现场的第二条叙事线。'
   },
   {
@@ -77,7 +77,7 @@ window.projectData = [
   {
     category: 'digital',
     title: '呼吸练习',
-    type: '数字体验',
+    type: '沉浸体验',
     index: '06',
     tag: 'Digital',
     subtitle: '让屏幕也学会慢下来',
